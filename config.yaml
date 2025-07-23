@@ -1,0 +1,36 @@
+# 模型配置
+models:
+  text:
+    model_name: "qwen2.5:latest" # 使用Ollama中的Qwen2.5模型
+    base_url: "http://localhost:11434" # Ollama API地址
+    api_key: "" # Ollama API密钥（如需）
+  
+  vision:
+    model_name: "minicpm-v:8b-2.6-q4_K_M" # Ollama中的MiniCPM-V 2.6模型
+    base_url: "http://localhost:11434" # Ollama API地址
+    api_key: "" # Ollama API密钥（如需）
+
+# MCP配置
+mcp:
+  enabled: true
+  port: 8080
+  host: "127.0.0.1"
+
+# 应用配置
+app:
+  title: "Fashion Agent - 智能衣物搭配助手"
+  description: "通过AI帮助您搭配衣物，提供评分、建议和商品推荐"
+  theme: "soft"
+  port: 7860
+  
+# 集成配置 (暂不实现)
+integrations:
+  taobao:
+    enabled: false
+    api_key: ""
+    secret_key: ""
+  
+  xiaohongshu:
+    enabled: false
+    api_key: ""
+    secret_key: ""
