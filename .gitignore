@@ -1,0 +1,6 @@
+﻿# 忽略敏感文件
+*.log
+*.env
+*.json
+node_modules/
+dist/

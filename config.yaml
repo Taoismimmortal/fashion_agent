@@ -1,0 +1,33 @@
+# 模型配置
+models:
+  text:
+    model_name: "qwen2.5:latest" # Qwen2.5
+    base_url: "http://localhost:11434" #
+    api_key: ""
+  
+  vision:
+    model_name: "minicpm-v:8b-2.6-q4_K_M" # MiniCPM-V 2.6模型
+    base_url: "http://localhost:11434"
+    api_key: "" 
+
+mcp:
+  enabled: true
+  port: 8080
+  host: "127.0.0.1"
+
+app:
+  title: "Fashion Agent - 智能衣物搭配助手"
+  description: "通过AI帮助您搭配衣物，提供评分、建议和商品推荐"
+  theme: "soft"
+  port: 7860
+  
+integrations:
+  taobao:
+    enabled: false
+    api_key: ""
+    secret_key: ""
+  
+  xiaohongshu:
+    enabled: false
+    api_key: ""
+    secret_key: ""
